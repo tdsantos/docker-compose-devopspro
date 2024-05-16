@@ -1,8 +1,11 @@
 #version: "3.8" - Version is not necessary in compose V2
 
 services:
-  nginx:
-    image: nginx:latest
+  postgre:
+    image: postgres:12.17
     ports:
-      - "8080:80"
-    
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=kubenews
+      - POSTGRES_PASSWORD=kubenews
+      - POSTGRES_DB=Pg123
