@@ -31,6 +31,7 @@ Below are the projects I will undertake as part of my Docker Compose studies:
 Here are some curated resources that are guiding my Docker Compose studies:
 
 - Docker Compose Documentation - https://www.compose-spec.io/
+- Formação DevopsPro - https://curso.devopspro.com.br/devops-pro/
 
 ## Let's Connect
 
