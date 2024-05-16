@@ -1,11 +1,34 @@
 #version: "3.8" - Version is not necessary in compose V2
-
+volumes:
+  postgres_vol:
+networks:
+  postgres_net:
+    driver: bridge
 services:
-  postgre:
-    image: postgres:12.17
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_USER=kubenews
-      - POSTGRES_PASSWORD=kubenews
-      - POSTGRES_DB=Pg123
+  PostgreSQL:
+   image: postgres:14.0
+   restart: always
+   container_name: postgresdb
+   ports:
+    - 5432:5432
+   networks:
+    - postgres_net
+   volumes:
+    - ~/postgre_vol:/var/lib/postgresql/data
+   environment:
+    POSTGRES_PASSWORD: Pg123
+    POSTGRES_USER: kubenews
+    POSTGRES_DB: kubenews
+  
+  #pgadmin:
+  # image: dpage/pgadmin4:6.0
+  # environment:
+  #  PGADMIN_DEFAULT_EMAIL: teste@teste.com
+  #  PGADMIN_DEFAULT_PASSWORD: SuperSecret
+  # ports:
+  #  - 8884:80
+  # networks:
+  #  - postgres_net
+  # depends_on:
+  #  - PostgreSQL
+  # restart: always
