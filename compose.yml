@@ -20,6 +20,8 @@ services:
       - 8080:8080
     networks:
       - kube_news_net
+    depends_on:
+      - postgre
     environment:
       DB_HOST: postgre
       DB_PASSWORD: Pg123
