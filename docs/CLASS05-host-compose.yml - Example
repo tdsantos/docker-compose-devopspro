@@ -1,0 +1,6 @@
+services:
+  nginx:
+    image: nginx
+    network_mode: "host"
+  curl:
+    image: nginx
