@@ -38,7 +38,7 @@ Here are some curated resources that are guiding my Docker Compose studies:
 If you're also studying Docker Compose or have insights to share, let's connect!
 
 - **GitHub:** [@tdsantos](https://github.com/tdsantos)
-- **LinkedIn:** [[Your LinkedIn Profile](https://www.linkedin.com/in/tdsantos1981/)]
+- **LinkedIn:** [(https://www.linkedin.com/in/tdsantos1981/)]
 
 ---
 
