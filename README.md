@@ -8,10 +8,10 @@ Docker Compose is a tool for defining and running multi-container Docker applica
 
 ## Objectives
 
-- [ ] Understand the YAML syntax for Docker Compose files.
-- [ ] Learn how to define and run multi-container applications with Docker Compose.
-- [ ] Explore volume and network configurations for complex applications.
-- [ ] Practice building and deploying a variety of applications using Docker Compose.
+- [X] Understand the YAML syntax for Docker Compose files.
+- [X] Learn how to define and run multi-container applications with Docker Compose.
+- [X] Explore volume and network configurations for complex applications.
+- [X] Practice building and deploying a variety of applications using Docker Compose.
 - [ ] Master Docker Compose commands and workflows.
 - [ ] Investigate best practices for Docker Compose in development and production environments.
 - [ ] Create a docker-compose catalog to speed-up my home-labs.
